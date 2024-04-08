@@ -1,5 +1,6 @@
 package com.example.board.service;
 
+
 import com.example.board.domain.Reply;
 import com.example.board.dto.PageRequestDTO;
 import com.example.board.dto.PageResponseDTO;
@@ -21,7 +22,7 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 @Log4j2
-public class ReplyServiceImpl implements ReplyService {
+public class ReplyServiceImpl implements ReplyService{
 
     private final ReplyRepository replyRepository;
 
@@ -45,6 +46,26 @@ public class ReplyServiceImpl implements ReplyService {
         Reply reply = replyOptional.orElseThrow();
 
         return modelMapper.map(reply, ReplyDTO.class);
+    }
+
+    @Override
+    public void modify(ReplyDTO replyDTO) {
+
+        Optional<Reply> replyOptional = replyRepository.findById(replyDTO.getRno());
+
+        Reply reply = replyOptional.orElseThrow();
+
+        reply.changeText(replyDTO.getReplyText());
+
+        replyRepository.save(reply);
+
+    }
+
+    @Override
+    public void remove(Long rno) {
+
+        replyRepository.deleteById(rno);
+
     }
 
     @Override
