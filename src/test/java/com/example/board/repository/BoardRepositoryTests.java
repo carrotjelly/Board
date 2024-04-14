@@ -1,6 +1,8 @@
 package com.example.board.repository;
 
 import com.example.board.domain.Board;
+import com.example.board.domain.BoardImage;
+import com.example.board.dto.BoardListReplyCountDTO;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.data.domain.Sort;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.IntStream;
 
 @SpringBootTest
@@ -139,7 +142,60 @@ public class BoardRepositoryTests {
         result.getContent().forEach(board -> log.info(board));
     }
 
+    @Test
+    public void testSearchReplyCount() {
 
+        String[] types = {"t","c","w"};
 
+        String keyword = "1";
+
+        Pageable pageable = PageRequest.of(0,10, Sort.by("bno").descending());
+
+        Page<BoardListReplyCountDTO> result = boardRepository.searchWithReplyCount(types, keyword, pageable );
+
+        //total pages
+        log.info(result.getTotalPages());
+        //pag size
+        log.info(result.getSize());
+        //pageNumber
+        log.info(result.getNumber());
+        //prev next
+        log.info(result.hasPrevious() +": " + result.hasNext());
+
+        result.getContent().forEach(board -> log.info(board));
+    }
+
+    @Test
+    public void testInsertWithImages() {
+
+        Board board = Board.builder()
+                .title("Image Test")
+                .content("첨부파일 테스트")
+                .writer("tester")
+                .build();
+
+        for (int i = 0; i < 3; i++) {
+
+            board.addImage(UUID.randomUUID().toString(), "file"+i+".jpg");
+
+        }//end for
+
+        boardRepository.save(board);
+    }
+
+    @Test
+    public void testReadWithImages() {
+
+        //반드시 존재하는 bno로 확인
+        Optional<Board> result = boardRepository.findByIdWithImages(1L);
+
+        Board board = result.orElseThrow();
+
+        log.info(board);
+        log.info("--------------------");
+        for (BoardImage boardImage : board.getImageSet()) {
+            log.info(boardImage);
+        }
+    }
 }
 
