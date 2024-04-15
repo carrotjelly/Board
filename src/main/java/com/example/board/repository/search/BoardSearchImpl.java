@@ -176,7 +176,7 @@ public class BoardSearchImpl extends QuerydslRepositorySupport implements BoardS
             boardJPQLQuery.where(booleanBuilder);
         }
 
-        boardJPQLQuery.groupBy(board);
+        boardJPQLQuery.groupBy(board.bno, board.title, board.writer, board.content, board.regDate, board.modDate, board.imageSet);
 
         getQuerydsl().applyPagination(pageable, boardJPQLQuery); //paging
 
