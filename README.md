@@ -14,8 +14,7 @@
 
 5차 commit : 파일 등록
 
-<<<<<<< HEAD
-6차 commit : 파일 삭제 및 form전송
-=======
 6차 commit : 파일 등록 결과창
->>>>>>> 691c0dd46ec4a6bdfb219a543647e27e114a8dbe
+
+7차 commit : 파일 삭제 및 파일 form전송
+
