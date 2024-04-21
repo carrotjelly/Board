@@ -51,7 +51,11 @@ public class Board extends BaseEntity{
         imageSet.add(boardImage);
     }
 
+    public void clearImages() {
 
+        imageSet.forEach(boardImage -> boardImage.changeBoard(null));
 
+        this.imageSet.clear();
+    }
 
 }
