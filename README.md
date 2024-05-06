@@ -16,29 +16,27 @@
 
 6차 commit : 파일 등록 결과창
 
-<<<<<<< HEAD
 7차 commit : 파일 삭제 및 form전송
 
 8차 commit : 목록페이지 썸네일 / 수정페이지 파일 업로드 및 삭제
 
-![](C:\Users\user\Desktop\KakaoTalk_20240422_163045935.png)
+
+![image](https://github.com/carrotjelly/Board/assets/114207748/cd255419-9f87-4b4a-afdf-1c6aecf8581f)
+
 게시판 등록 테스트 페이지
 
-![KakaoTalk_20240422_163046046.png](..%2FUsers%2Fuser%2FDesktop%2FKakaoTalk_20240422_163046046.png)
+
 게시판 등록 테스트 페이지
 
-![KakaoTalk_20240422_163046137.png](..%2FUsers%2Fuser%2FDesktop%2FKakaoTalk_20240422_163046137.png)
+
 댓글 등록 테스트 페이지
 
-![KakaoTalk_20240422_163046235.png](..%2FUsers%2Fuser%2FDesktop%2FKakaoTalk_20240422_163046235.png)
+
 댓글 등록 테스트 페이지
 
-![KakaoTalk_20240422_163046334.png](..%2FUsers%2Fuser%2FDesktop%2FKakaoTalk_20240422_163046334.png)
+
 파일 첨부 테스트 페이지
 
-![KakaoTalk_20240422_163046450.png](..%2FUsers%2Fuser%2FDesktop%2FKakaoTalk_20240422_163046450.png)
-파일 첨부 테스트 페이지
-=======
-7차 commit : 파일 삭제 및 파일 form전송
 
->>>>>>> 09ce4dbd3cc59418e161995ec1a4cbdcb35dd5dc
+파일 첨부 테스트 페이지
+
