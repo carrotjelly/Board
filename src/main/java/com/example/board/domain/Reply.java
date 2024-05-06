@@ -17,7 +17,7 @@ import javax.persistence.*;
 public class Reply extends BaseEntity{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long rno;
 
     @ManyToOne(fetch = FetchType.LAZY)

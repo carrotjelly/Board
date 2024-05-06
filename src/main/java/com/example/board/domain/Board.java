@@ -15,7 +15,7 @@ import java.util.Set;
 @ToString
 public class Board extends BaseEntity{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long bno;
 
     @Column(length = 500, nullable = false) //컬럼의 길이와 null허용여부
