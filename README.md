@@ -2,7 +2,7 @@
 
 언어 : JAVA
 
-기술스택 : QueryDsl, Hibernate, Axios, Js, SwaggerAPI, SpringBoot, Oracle
+기술스택 : QueryDsl, Hibernate, Axios, Js, SwaggerAPI, SpringBoot, Oracle, SpringSecurity, BootStrap
 
 1차 commit : domain 설계 및 게시판 등록/ 조회 
 
