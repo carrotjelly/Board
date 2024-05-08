@@ -85,7 +85,7 @@ public class BoardController {
 //
 //    }
 
-
+    @PreAuthorize("isAuthenticated()")//로그인한 사용자로 제한
     @GetMapping({"/read", "/modify"})
     public void read(Long bno, PageRequestDTO pageRequestDTO, Model model){
 

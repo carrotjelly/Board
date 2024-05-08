@@ -2,7 +2,7 @@
 
 언어 : JAVA
 
-기술스택 : QueryDsl, Hibernate, Axios, Js, SwaggerAPI, SpringBoot, Oracle
+기술스택 : QueryDsl, Hibernate, Axios, Js, SwaggerAPI, SpringBoot, Oracle, SpringSecurity, BootStrap
 
 1차 commit : domain 설계 및 게시판 등록/ 조회 
 
@@ -20,8 +20,11 @@
 
 8차 commit : 목록페이지 썸네일 / 수정페이지 파일 업로드 및 삭제
 
-<<<<<<< HEAD
-=======
+9차 commit : Spring Security 로그인 설정 및 테스트
+
+10차 commit : 커스텀 로그인페이지 및 권한설정
+
+================================
 
 ![image](https://github.com/carrotjelly/Board/assets/114207748/cd255419-9f87-4b4a-afdf-1c6aecf8581f)
 ![image](https://github.com/carrotjelly/Board/assets/114207748/181e4d94-847c-4f81-b809-6b75c73fc53b)
@@ -40,4 +43,3 @@
 
 파일 첨부 테스트 페이지
 
->>>>>>> 2b06fc9e1f2997d824f35f02c152567672fff2c1
