@@ -22,6 +22,8 @@
 
 9차 commit : Spring Security 로그인 설정 및 테스트
 
+10차 commit : 커스텀 로그인페이지 및 권한설정
+
 ================================
 
 ![image](https://github.com/carrotjelly/Board/assets/114207748/cd255419-9f87-4b4a-afdf-1c6aecf8581f)
