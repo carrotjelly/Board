@@ -24,6 +24,8 @@
 
 10차 commit : 커스텀 로그인페이지 및 권한설정
 
+11차 commit : 댓글 및 게시판 수정,삭제에대한 권한 부여/ Custom 403 에러처리
+
 ================================
 
 ![image](https://github.com/carrotjelly/Board/assets/114207748/cd255419-9f87-4b4a-afdf-1c6aecf8581f)
